@@ -19,7 +19,11 @@ struct ContentView: View {
             .padding()
             
             Button(action:{
-                outputText = "Hi,SwiftUI!!"
+                if outputText == "Hello Swift!!"{
+                        outputText = "Hi,SwiftUI!!"
+                }else{
+                    outputText = "Hello Swift!!"
+                }
             }){
             Text("切り替えボタン")
             .padding(.all)
